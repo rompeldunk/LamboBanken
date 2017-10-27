@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "964415343307",
+    "firebase_url": "https://yelobase.firebaseio.com",
+    "project_id": "yelobase",
+    "storage_bucket": "yelobase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964415343307:android:e1648d01f96c1be5",
+        "android_client_info": {
+          "package_name": "com.yelobase.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964415343307-go5luj1g7hvkvufo7skuvu92pbrq7vjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4P3UpJk-yB-QSM-74ilimqta4ksE92S4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
