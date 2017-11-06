@@ -9,15 +9,44 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="info.androidhive.firebase.MainActivity">
+    tools:context="info.androidhive.firebase.MainActivity"
+    android:baselineAligned="false">
 
-    <TextView
-        android:id="@+id/txt_user"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_horizontal_margin"
-        android:textSize="20dp" />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_user"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:textSize="13sp"
+            android:minLines="1"/>
+
+        <TextView
+            android:id="@+id/txt_rente"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:minLines="1"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txt_lambo"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:minLines="1"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,25 +72,46 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/antall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/email"
-                android:inputType="textEmailAddress"
-                android:maxLines="1" />
+                android:hint="@string/antall"
+                android:inputType="number"
+                />
+
+
 
         </android.support.design.widget.TextInputLayout>
 
-        <Button
-            android:id="@+id/btn_save"
-            style="?android:textAppearanceSmall"
+
+        <Switch
+
+            android:id="@+id/sw_rentefritak"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:checked="false"
+            android:text="@string/renteFritak" />
+
+        <SeekBar
+        android:id="@+id/seekBar"
+        android:max="50"
+        android:progress="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_save"
+            style="?android:textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
             android:layout_marginTop="16dp"
             android:background="@color/colorPrimary"
             android:text="@string/action_save"
             android:textColor="@android:color/white"
-            android:textStyle="bold" />
+
+            />
 
     </LinearLayout>
 

@@ -11,15 +11,19 @@ import com.google.firebase.database.IgnoreExtraProperties;
 public class User {
 
     public String name;
-    public String email;
+    public String antall;
+    public boolean rentefritak;
 
     // Default constructor required for calls to
     // DataSnapshot.getValue(User.class)
+
     public User() {
     }
 
-    public User(String name, String email) {
+    public User(String name, String antall, boolean rentefritak) {
         this.name = name;
-        this.email = email;
+        this.antall = antall;
+        this.rentefritak = rentefritak;
     }
+
 }
